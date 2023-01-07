@@ -1,0 +1,34 @@
+#popular-section {
+	font-family: 'futura';
+	text-align: center;
+}
+#popular-section .popular-posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+#popular-section .popular-posts article {
+    display: flex;
+    flex-direction: column;
+    padding-left: 51px;
+    padding-right: 51px;
+}
+#popular-section .popular-posts article .aricle-content {
+	position: relative;
+	width: 100%;
+}
+#popular-section .popular-posts article .aricle-content > a:before {
+    content: "";
+    display: block;
+    padding-top: 133.333333%;
+}
+#popular-section .popular-posts article .aricle-content a {
+	display: block;
+	position: relative;
+}
+#popular-section .popular-posts article .aricle-content .article-image {
+	height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
