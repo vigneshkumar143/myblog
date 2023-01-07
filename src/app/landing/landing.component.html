@@ -1,16 +1,17 @@
 <div id="popular-section" class="container">
 	<h2 class="popular-cat-header">Popular Posts</h2>
-	<div class="popular-posts">
-		<article *ngFor="let item of landigpageList" id="{{ item.id }}" class="article article-popular">
+	<div class="popular-posts col-md-12">
+		<article *ngFor="let item of landigpageList" id="{{ item.id }}" class="col-md-4 article article-popular">
 			<div class="aricle-content">
 				<a href="#">					
-					<div class="article-image" style="background-image: url(assets/images/{{ item.backgroundImage }});background-position: top; background-size: cover;">
+					<div class="col-md-12 article-image" style="background-image: url(assets/images/{{ item.backgroundImage }});background-position: top; background-size: cover;">
 					</div>
 				</a>
 			</div>
 			<div class="aricle-header">
 				<a href="#">{{ item.category }}</a>
-				<p> {{ item.title }} </p>
+				<p class="title"> {{ item.title }} </p>
+				<p class="description"> {{ item.description }} </p>
 			</div>
 		</article>
 	</div>

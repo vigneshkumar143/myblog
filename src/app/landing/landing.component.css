@@ -2,6 +2,9 @@
 	font-family: 'futura';
 	text-align: center;
 }
+#popular-section h2 {
+	padding: 25px 0 30px;
+}
 #popular-section .popular-posts {
     display: flex;
     flex-wrap: wrap;
@@ -9,8 +12,8 @@
 #popular-section .popular-posts article {
     display: flex;
     flex-direction: column;
-    padding-left: 51px;
-    padding-right: 51px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 #popular-section .popular-posts article .aricle-content {
 	position: relative;
@@ -24,6 +27,27 @@
 #popular-section .popular-posts article .aricle-content a {
 	display: block;
 	position: relative;
+}
+#popular-section .popular-posts article .aricle-header {
+	padding: 25px 0 30px;
+}
+#popular-section .popular-posts article .aricle-header a {
+	text-decoration: none;
+	text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 1.12px;
+    line-height: 16px;
+    font-weight: 500;
+}
+#popular-section .popular-posts article .aricle-header p.title {
+	font-size: 30px;
+    line-height: 1.1;
+}
+#popular-section .popular-posts article .aricle-header p.description {
+	font-size: 17px;
+    line-height: 1.29;
 }
 #popular-section .popular-posts article .aricle-content .article-image {
 	height: 100%;
