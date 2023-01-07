@@ -6,24 +6,27 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<h1>Angular Router Sample</h1>
-
-<nav>
-  <a class="button"
-     routerLink="/login"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    Crisis Center
-  </a> |
-  <a class="button"
-     routerLink="/navbar"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    Heroes
-  </a>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand pb-2" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul *ngIf="menuList && menuList.length > 0" class="navbar-nav">
+      <div *ngFor="let mainmenu of menuList" fxFlexAlign="center">
+        <li class="nav-item {{mainmenu.children && mainmenu.children.length > 0 ? 'dropdown' : ''}} an-nav-mainmenu">
+          <a *ngIf="!mainmenu.hasOwnProperty('children')" class="nav-link" href="#">{{ mainmenu.name }}</a>
+          <a *ngIf="mainmenu.children && mainmenu.children.length > 0" class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ mainmenu.name }}</a>
+          <ul *ngIf="mainmenu.children && mainmenu.children.length > 0" class="sub-cat dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li *ngFor="let submenu of mainmenu.children">
+              <a class="dropdown-item" href="#">{{ submenu.name }}</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+    </ul>
+  </div>
 </nav>
-
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->

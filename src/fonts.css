@@ -1,0 +1,5 @@
+/* You can add global Font styles to this file */
+@font-face {
+  font-family: futura;
+  src: url(assets/font/futura-pt-book.otf) format("opentype");
+}
