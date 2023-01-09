@@ -16,8 +16,6 @@
 .an-nav-mainmenu {
   text-transform: capitalize;
 }
-
-
 .navbar-nav li:hover > ul.dropdown-menu {
   display: block;
 }
@@ -34,3 +32,36 @@
   text-decoration: underline;
   transform: rotate(-90deg);
 } 
+
+
+
+#footer-section .empty-div {
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  min-width: initial;
+  height: 30px;
+}
+#footer-section {
+  background-color: #003ab6;
+  color: #eeeeee;
+}
+#footer-section .container {
+  border-top: 1px solid #eeeeee;
+}
+#footer-section #footer-center-section {
+  text-align: left;
+}
+#footer-section #footer-center-section input {
+  border: 2px solid #eeeeee;
+}
+#footer-section #footer-center-section a {
+  border: 2px solid black;
+  margin-left: 5px;
+  background-color: #000000;
+  line-height: 15px;
+  color: #eeeeee;
+}
+#footer-section #footer-right-section {
+  text-align: center;
+}

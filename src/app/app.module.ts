@@ -13,8 +13,8 @@ import { LandingComponent } from './landing/landing.component';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([
-      {path: 'landing', component: LandingComponent}
+    RouterModule.forRoot([      
+      {path: '', component: LandingComponent}
     ]),
   ],
   providers: [],
